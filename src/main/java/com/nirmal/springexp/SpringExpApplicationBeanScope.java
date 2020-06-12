@@ -1,3 +1,4 @@
+/*
 package com.nirmal.springexp;
 
 import com.nirmal.springexp.beanscope.PersonDAO;
@@ -27,3 +28,4 @@ public class SpringExpApplicationBeanScope {
     }
 
 }
+*/

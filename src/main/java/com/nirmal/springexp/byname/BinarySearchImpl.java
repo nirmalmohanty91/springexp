@@ -5,9 +5,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 @Component
 public class BinarySearchImpl {
 
@@ -16,10 +13,10 @@ public class BinarySearchImpl {
     @Autowired
     private SortAlgorithm bubbleSortAlgorithm; //ByName autowiring
 
-    @PostConstruct
+   /* @PostConstruct
     public void postConstruct() {
         logger.info("Bean is created!!");
-    }
+    }*/
 
     public int binarySearch(int[] numbers, int numberToSearchFor) {
 
@@ -29,8 +26,8 @@ public class BinarySearchImpl {
         return 3;
     }
 
-    @PreDestroy
+   /* @PreDestroy
     public void preDestroy() {
         logger.info("Bean is going to be destroyed!!");
-    }
+    }*/
 }

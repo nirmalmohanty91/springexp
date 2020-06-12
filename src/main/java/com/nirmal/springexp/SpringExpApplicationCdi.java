@@ -1,3 +1,4 @@
+/*
 package com.nirmal.springexp;
 
 import com.nirmal.springexp.byname.BinarySearchImpl;
@@ -20,3 +21,4 @@ public class SpringExpApplicationCdi {
     }
 
 }
+*/
