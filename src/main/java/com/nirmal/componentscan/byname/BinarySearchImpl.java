@@ -1,4 +1,4 @@
-package com.nirmal.springexp.byname;
+package com.nirmal.componentscan.byname;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,8 +21,8 @@ public class BinarySearchImpl {
     public int binarySearch(int[] numbers, int numberToSearchFor) {
 
         int[] sortedNumbers = bubbleSortAlgorithm.sort(numbers);
+        logger.info("This is by Name autowiring");
         logger.info("{}", bubbleSortAlgorithm);
-        // Search the array
         return 3;
     }
 

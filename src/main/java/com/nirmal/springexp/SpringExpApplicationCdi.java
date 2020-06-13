@@ -1,7 +1,7 @@
 /*
 package com.nirmal.springexp;
 
-import com.nirmal.springexp.byname.BinarySearchImpl;
+import com.nirmal.componentscan.byname.BinarySearchImpl;
 import com.nirmal.springexp.cdi.CdiBusiness;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

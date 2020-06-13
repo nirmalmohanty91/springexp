@@ -1,4 +1,4 @@
-package com.nirmal.springexp.byname;
+package com.nirmal.componentscan.byname;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
