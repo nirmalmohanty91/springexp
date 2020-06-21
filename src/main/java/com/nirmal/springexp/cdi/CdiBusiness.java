@@ -17,10 +17,10 @@ public class CdiBusiness {
     }
 
     public int findGreatest() {
-        int m = Integer.MAX_VALUE;
+        int m = Integer.MIN_VALUE;
         int[] data = cdiDao.getData();
         for (int a : data) {
-            if (m > a) {
+            if (a > m) {
                 m = a;
             }
         }
