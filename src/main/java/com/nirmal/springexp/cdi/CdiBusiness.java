@@ -15,4 +15,18 @@ public class CdiBusiness {
     public void setCdiDao(CdiDao cdiDao) {
         this.cdiDao = cdiDao;
     }
+
+    public int findGreatest() {
+        int m = Integer.MAX_VALUE;
+        int[] data = cdiDao.getData();
+        for (int a : data) {
+            if (m > a) {
+                m = a;
+            }
+        }
+        return m;
+
+    }
+
+
 }
