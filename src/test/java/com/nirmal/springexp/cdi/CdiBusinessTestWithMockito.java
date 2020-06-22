@@ -26,4 +26,20 @@ public class CdiBusinessTestWithMockito {
         int result = cdiBusiness.findGreatest();
         Assert.assertEquals(7, result);
     }
+
+    @Test
+    public void testFindGreatest_NoElements() {
+        //Remember to call the service which you are mocking. for example here we are mocking the DataService
+        when(cdiDao.getData()).thenReturn(new int[]{});
+        int result = cdiBusiness.findGreatest();
+        Assert.assertEquals(Integer.MIN_VALUE, result);
+    }
+
+    @Test
+    public void testFindGreatestEqualElements() {
+        //Remember to call the service which you are mocking. for example here we are mocking the DataService
+        when(cdiDao.getData()).thenReturn(new int[]{2,2});
+        int result = cdiBusiness.findGreatest();
+        Assert.assertEquals(2, result);
+    }
 }
